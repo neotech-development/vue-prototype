@@ -19,11 +19,9 @@
     </f7-list-item>
 </template>
 <script>
-
     import {EVENT_FAVORITE_TOGGLE} from '../actions';
     import Vuex from 'vuex';
     import Coefficients from './Coefficients.vue';
-
 
     export default {
         template: '#events-list-item',

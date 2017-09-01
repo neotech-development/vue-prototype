@@ -40,14 +40,14 @@
 </template>
 
 <script>
-import Sidemenu from './components/Sidemenu.vue';
+    import Sidemenu from './components/Sidemenu.vue';
 
-export default {
-    name: 'app',
-    components: {
-        sidemenu: Sidemenu
-    }
-};
+    export default {
+        name: 'app',
+        components: {
+            sidemenu: Sidemenu
+        }
+    };
 </script>
 
 <style>

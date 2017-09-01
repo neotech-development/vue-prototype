@@ -18,12 +18,10 @@ if (isIos) {
     require('framework7/dist/css/framework7.material.colors.min.css');
 }
 
-
 Vue.use(Meta);
 Vue.use(Framework7Vue);
 Vue.config.productionTip = false;
 Vue.config.debug = true;
-
 
 new Vue({
     el: '#app',

@@ -1,6 +1,7 @@
 // @flow
 import Vue from 'vue';
 import Vuex from 'vuex';
+
 Vue.use(Vuex);
 const stringify = JSON.stringify;
 
@@ -57,7 +58,6 @@ const eventsStore = {
     // Sync operations.
     mutations: {
 
-
         [EVENT_UPDATE](state, newEvent) {
 
             const id = newEvent.id;
@@ -82,7 +82,6 @@ const eventsStore = {
         [EVENT_CREATE](state, event) {
             Vue.set(state.events, event.id, event);
         }
-
 
     },
     // Async operations.
@@ -123,7 +122,8 @@ const eventsStore = {
                                 }
                             })));
                     }
-                }, () => {});
+                }, () => {
+                });
         },
 
         [EVENT_FAVORITE_TOGGLE]({state, commit}, id) {
