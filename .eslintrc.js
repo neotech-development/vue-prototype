@@ -2,7 +2,7 @@ module.exports = {
     'root': true,
     'env': {
         'browser': true,
-        'node': true
+        'es6': true
     },
     'parser': 'babel-eslint',
     'parserOptions': {
@@ -49,7 +49,7 @@ module.exports = {
             120
         ],
         'no-console': [
-            'error',
+            'warn',
             {
                 'allow': [
                     'warn',
@@ -83,6 +83,12 @@ module.exports = {
 
         'eol-last': ['warn', 'always'],
         'no-trailing-spaces': 'warn',
-        'no-multiple-empty-lines': ['warn', {max: 1, maxEOF: 0, maxBOF: 0}]
+        'no-multiple-empty-lines': ['warn', {max: 1, maxEOF: 0, maxBOF: 0}],
+        'no-global-assign': ["error", {"exceptions": []}],
+
+    },
+    'globals': {
+        'require': false,
+        'define': false
     }
 };
