@@ -20,8 +20,10 @@ if (isIos) {
 
 Vue.use(Meta);
 Vue.use(Framework7Vue);
-Vue.config.productionTip = false;
-Vue.config.debug = true;
+Vue.config.productionTip = true;
+Vue.config.silent = false;
+Vue.config.devtools = true;
+Vue.config.performance = true;
 
 new Vue({
     el: '#app',
