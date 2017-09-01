@@ -79,6 +79,10 @@ module.exports = {
         'curly': [
             'off',
             'multi'
-        ]
+        ],
+
+        'eol-last': ['warn', 'always'],
+        'no-trailing-spaces': 'warn',
+        'no-multiple-empty-lines': ['warn', {max: 1, maxEOF: 0, maxBOF: 0}]
     }
 };
