@@ -48,6 +48,8 @@ module.exports = {
             'warn',
             120
         ],
+        'no-alert': 'error',
+        'no-debugger': 'error',
         'no-console': [
             'warn',
             {

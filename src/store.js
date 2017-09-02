@@ -101,7 +101,7 @@ const eventsStore = {
 
         [EVENTS_FETCH]({state, dispatch}) {
 
-            return fetch('/static/live-init.json')
+            return fetch('/static/live.json')
             // Parse response.
                 .then(resp => resp.text())
                 // Check response is changed.
