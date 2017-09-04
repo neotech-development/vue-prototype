@@ -16,7 +16,6 @@
     "stage-2"
   ],
   "plugins": [
-    "transform-runtime"
   ],
   "env": {
     "test": {
@@ -24,21 +23,28 @@
         "istanbul"
       ],
       "presets": [
+        "es2015",
         "env",
         "stage-2"
       ]
     },
     "development": {
       "plugins": [
+        "transform-runtime",
+        "babel-plugin-transform-class-properties",
         "syntax-flow",
         "tcomb",
-        "transform-flow-strip-types"
+        "transform-flow-strip-types",
+        "transform-class-properties"
       ]
     },
     "production": {
       "plugins": [
+        "transform-runtime",
+        "babel-plugin-transform-class-properties",
         "syntax-flow",
-        "transform-flow-strip-types"
+        "transform-flow-strip-types",
+        "transform-class-properties"
       ]
     }
   }

@@ -13,3 +13,6 @@ static/live-init.json
 *.ntvs*
 *.njsproj
 *.sln
+# env-cmd:
+# https://github.com/toddbluhm/env-cmd#user-content-advanced-usage
+.env.local

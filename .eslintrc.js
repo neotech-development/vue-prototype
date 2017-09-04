@@ -1,27 +1,39 @@
 module.exports = {
     'root': true,
+    'parser': 'babel-eslint',
     'env': {
         'browser': true,
         'es6': true
     },
-    'parser': 'babel-eslint',
     'parserOptions': {
+        'ecmaVersion': 8,
         'sourceType': 'module',
-        'ecmaVersion': 8
+        "allowImportExportEverywhere": false
     },
+
     'extends': [
         'eslint:recommended',
-        'plugin:flowtype/recommended',
-        'plugin:tcomb/recommended'
+        'plugin:tcomb/recommended',
+        "plugin:flowtype/recommended"
     ],
+
     'plugins': [
-        "html",
-        'tcomb',
         'flowtype',
-        'flowtype-errors'
+        "json",
+        "html",
+        'tcomb'
+
+        // 'prettier'
     ],
+
+    'settings': {
+        "onlyFilesWithFlowAnnotation": true
+    },
+
     'rules': {
-        "flowtype-errors/show-errors": 2,
+        // "prettier/prettier": "error",
+
+
 
         'no-undef': 'warn',
         'no-unused-vars': 'warn',
