@@ -16,3 +16,4 @@ static/live-init.json
 # env-cmd:
 # https://github.com/toddbluhm/env-cmd#user-content-advanced-usage
 .env.local
+scripts/.pid
